@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 150px 24px 150px;
+}
+
+.header img {
+    width: 133px;
+    height: 41px;
+}
+
+.header-link {
+    height: 24px;
+    display: inline-block;
+    color: #0284C7;
+    margin-right: 10px;
+}
+
+.link-dull {
+    color: #64748B;
+}
