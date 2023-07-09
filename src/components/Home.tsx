@@ -8,6 +8,9 @@ import { homeActions, homeObj } from "../store/homeSlice";
 import Header from "./Header";
 import Footer from "./Footer";
 import TopRatedBook from "./TopRatedBook";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../css/Home.css"
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -41,7 +44,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className="home">
       <Header />
       <div>
         <h1>Find Your Next Favorite Books?</h1>
@@ -54,12 +57,13 @@ const Home = () => {
           <div>
             <h2>Top Rated Books</h2>
             <PrimaryButton
+              className="find-books-btn"
               text="Find Books"
               onClick={() => navigate("/bookshelves")}
             />
           </div>
           {topRatedBooks.length ? (
-            <Slider>
+            <Slider slidesToShow={3} dots>
               {topRatedBooks.map((book) => (
                 <TopRatedBook key={book.id} book={book} />
               ))}

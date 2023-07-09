@@ -1,0 +1,9 @@
+.top-rated-book img {
+    width: 350px;
+    height: 224px;
+    border-radius: 4px;
+}
+
+.top-rated-book {
+    margin: 10px;
+}

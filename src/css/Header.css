@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 24px 150px 24px 150px;
+    background-color: #ffffff;
 }
 
 .header img {
